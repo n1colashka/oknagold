@@ -1,0 +1,80 @@
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 22px;
+    line-height: 30px;
+    color: $black;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1640px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.title {
+    @include font('ubuntu-bold');
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.btn {
+    @include font('ubuntu-bold');
+    font-size: 36px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 4px solid transparent;
+    box-shadow: 0px 0px 48.96px 2.04px rgba(0, 0, 0, 0.1);
+    padding: 20px 50px;
+}
+
+// Input number fix
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

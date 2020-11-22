@@ -1,0 +1,27 @@
+$black: #14101d;
+$main: #fd5900;
+$second: #fdbd00;
+$grey: #f3f3fb;
+
+@mixin font($name) {
+    @if $name == 'ubuntu' {
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+    @if $name == 'ubuntu-light' {
+        font-family: 'Ubuntu-Light', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+    }
+    @if $name == 'ubuntu-medium' {
+        font-family: 'Ubuntu-Medium', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    @if $name == 'ubuntu-bold' {
+        font-family: 'Ubuntu-Bold', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+    @if $name == 'minion' {
+        font-family: 'MinionPro', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+}  
