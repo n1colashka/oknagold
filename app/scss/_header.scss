@@ -1,0 +1,209 @@
+.header {
+    position: fixed;
+    left: 0;
+    width: calc(100% - 70px);
+    top: 30px;
+    letter-spacing: 0.05em;
+    box-shadow: 0px 0px 48.96px 2.04px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    z-index: 30;
+    transition: .3s ease;
+
+    &.active {
+        top: 0;
+        width: 100%;
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        img {
+            max-width: 160px;
+        }
+    }
+
+    &__content {
+        padding: 30px 0;
+    }
+
+    &__top-row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 35px;
+    }
+
+    &__top-navigation {
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 0 -18px;
+        }
+
+        li {
+            margin: 0 18px;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+
+        li {
+            max-width: 30px;
+        }
+
+        li + li {
+            margin-left: 30px;
+        }
+    }
+
+    &__center-links {
+        display: flex;
+        align-items: center;
+        margin: 0 -25px;
+
+        img {
+            max-width: 40px;
+        }
+
+        li {
+            @include font('ubuntu-bold');
+            margin: 0 25px;
+        }
+        
+        a {
+            display: flex;
+            align-items: center;
+        }
+
+        span {
+            color: $main;
+            text-transform: uppercase;
+            margin-left: 15px;
+        }
+    }
+
+    &__schedule {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 220px;
+
+        a {
+            @include font('ubuntu-bold');
+            display: block;
+            margin-bottom: 15px;
+            color: $main;
+        }
+
+        span {
+            text-transform: uppercase;
+            line-height: 24px;
+        }
+    }
+
+    &__bottom-row {
+        background-color: $third;
+        color: #ffffff;
+    }
+
+    &__bottom-row-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    &__bottom-navigation {
+
+        & > ul {
+            display: flex;
+            align-items: flex-start;
+            margin: 0 -20px;
+
+            & > li {
+                position: relative;
+            }
+
+            // Все ссылки навигации
+            & > li a {
+                display: block;
+                padding: 10px;
+                padding-left: 20px;
+            }
+        }
+
+        // Ссылки меню 0 уровня
+        & > ul > li >  a {
+            padding: 20px;
+        }
+
+        li ul {
+            display: none;
+        }
+
+        &-wrapper {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 400px;
+
+            // Список меню 1 уровня
+            & > ul {
+                overflow-y: auto;
+                max-height: 500px;
+                min-width: 400px;
+                direction: rtl;
+                background-color: #555354;
+            }
+            // Список меню 2 уровня
+            & > ul > li > ul {
+                position: absolute;
+                right: -100%;
+                background-color: #53494e;
+                height: 100%;
+                min-width: 400px;
+                top: 0;
+            }
+        }
+    }
+
+    &__bottom-row-right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__lang {
+        margin-left: 40px;
+        a {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            max-width: 30px;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 8px;
+        }
+    }
+
+    &__btn {
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: 0.075em;
+        padding: 12px 20px;
+        background-color: $main;
+        margin-left: 40px;
+    }
+}
+

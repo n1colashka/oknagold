@@ -19,3 +19,35 @@
 
 @media (max-width: 400px) {
 }
+
+@media (min-width: 1024px) {
+    .header {
+        &__bottom-navigation {
+            
+            li {
+                &:hover {
+                    & > a {
+                        background-color: #53494e;
+                    }
+                    & > ul {
+                        display: block;
+                    }
+
+                    .header__bottom-navigation-wrapper {
+                        & > ul {
+                            display: block;
+                        }
+
+                        // Ссылки на 2 уровне меню
+                        & > ul > li > ul > li:hover {
+                            a {
+                                background-color: #3f3339;
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}
