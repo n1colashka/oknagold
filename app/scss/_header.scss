@@ -4,10 +4,15 @@
     width: calc(100% - 70px);
     top: 30px;
     letter-spacing: 0.05em;
-    box-shadow: 0px 0px 48.96px 2.04px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 15px 5px rgba(0,0,0,0.42);
     background-color: #ffffff;
     z-index: 30;
     transition: .3s ease;
+
+    &.open {
+        overflow: auto;
+        height: 100vh;
+    }
 
     &.active {
         top: 0;
@@ -18,55 +23,114 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__logo {
         img {
-            max-width: 160px;
+            width: 10rem;
         }
     }
 
     &__content {
-        padding: 30px 0;
+        padding: 1.875rem 0;
     }
 
     &__top-row {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-bottom: 35px;
+        flex-wrap: wrap;
+        margin-bottom: 2.1875rem;
     }
 
     &__top-navigation {
         ul {
             display: flex;
             align-items: center;
-            margin: 0 -18px;
+            flex-wrap: wrap;
+            margin: 0 -1.125rem;
         }
 
         li {
-            margin: 0 18px;
+            margin: 0 1.125rem;
+        }
+    }
+
+    &__menu-btn {
+        display: none;
+        position: fixed;
+        right: 20px;
+        top: 55px;
+        width: 24px;
+        height: 16px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        order: 5;
+        z-index: 50;
+
+        &.active {
+            &::before,
+            &::after {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                transform: translateY(-50%) rotate(45deg);
+            }
+
+            &::after {
+                transform: translateY(-50%) rotate(-45deg);
+            }
+
+            span {
+                transform: scaleX(0);
+            }
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: $main;
+            margin-bottom: 4px;
+            transition: .6s ease;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: $main;
+            margin-bottom: 4px;
+            transition: .3s ease;
         }
     }
 
     &__socials {
         display: flex;
         align-items: center;
-        margin-left: 50px;
+        margin-left: 3.125rem;
 
         li {
-            max-width: 30px;
+            img {
+                max-width: 30px;
+            }
         }
 
         li + li {
-            margin-left: 30px;
+            margin-left: 1.875rem;
         }
     }
 
     &__center-links {
         display: flex;
         align-items: center;
-        margin: 0 -25px;
+        flex-wrap: wrap;
+        margin: 0 -1.5625rem;
 
         img {
             max-width: 40px;
@@ -74,7 +138,8 @@
 
         li {
             @include font('ubuntu-bold');
-            margin: 0 25px;
+            margin: 0 1.5625rem;
+            
         }
         
         a {
@@ -85,7 +150,7 @@
         span {
             color: $main;
             text-transform: uppercase;
-            margin-left: 15px;
+            margin-left: 0.9375rem;
         }
     }
 
@@ -93,18 +158,21 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 220px;
+        flex-wrap: wrap;
+        max-width: 13.75rem;
+        margin-left: 1.25rem;
 
         a {
             @include font('ubuntu-bold');
             display: block;
             margin-bottom: 15px;
             color: $main;
+            
         }
 
         span {
             text-transform: uppercase;
-            line-height: 24px;
+            line-height: 1.5rem;
         }
     }
 
@@ -126,11 +194,13 @@
         & > ul {
             display: flex;
             align-items: flex-start;
-            margin: 0 -20px;
+            flex-wrap: wrap;
+            margin: 0 -1.25rem;
 
             & > li {
                 position: relative;
             }
+
 
             // Все ссылки навигации
             & > li a {
@@ -142,7 +212,7 @@
 
         // Ссылки меню 0 уровня
         & > ul > li >  a {
-            padding: 20px;
+            padding: 1.25rem;
         }
 
         li ul {
@@ -153,24 +223,26 @@
             position: absolute;
             top: 100%;
             left: 0;
-            min-width: 400px;
+            min-width: 25rem;
+            z-index: 32;
+            background-color: $third;
 
             // Список меню 1 уровня
             & > ul {
                 overflow-y: auto;
-                max-height: 500px;
-                min-width: 400px;
+                max-height: 400px;
+                min-width: 25rem;
                 direction: rtl;
-                background-color: #555354;
+                background-color: #53494e;
             }
             // Список меню 2 уровня
             & > ul > li > ul {
                 position: absolute;
                 right: -100%;
-                background-color: #53494e;
                 height: 100%;
-                min-width: 400px;
+                min-width: 25rem;
                 top: 0;
+                background-color: #555354;
             }
         }
     }
@@ -178,13 +250,15 @@
     &__bottom-row-right {
         display: flex;
         align-items: center;
+        margin-left: 1.875rem;
     }
 
     &__lang {
-        margin-left: 40px;
+        
         a {
             display: flex;
             align-items: center;
+            
         }
 
         img {
@@ -193,17 +267,18 @@
 
         span {
             display: inline-block;
-            margin-left: 8px;
+            margin-left: 0.5rem;
         }
     }
 
     &__btn {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: normal;
         letter-spacing: 0.075em;
-        padding: 12px 20px;
+        padding: 0.75rem 1.25rem;
         background-color: $main;
-        margin-left: 40px;
+        margin-left: 2.5rem;
+        transition: .3s ease;
     }
 }
 
