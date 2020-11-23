@@ -121,6 +121,9 @@
             flex-direction: column;
             align-items: flex-start;
             margin: 0 auto;
+            li {
+                width: 100%;
+            }
             a {
                 padding-bottom: 10px;
                 padding-top: 10px;
