@@ -1,0 +1,100 @@
+.hero {
+    min-height: 100vh;
+
+    &__slider {
+        height: 100%;
+    }
+    
+    .container {
+        height: 100%;
+        max-width: 1810px;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    &__item-img {
+        position: relative;
+        max-width: 865px;
+        margin-left: auto;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+    
+    &__item-inner {
+        margin-top: 23%;
+        padding-right: 30px;
+        width: 100%;
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    &__item-title {
+        @include font('ubuntu-bold');
+        font-size: 72px;
+        line-height: 72px;
+        margin-bottom: 115px;
+        max-width: 800px;
+
+        span {
+            color: $main;
+        }
+    }
+
+    &__item-btn {
+        background-color: $second;
+        &:hover {
+            background-color: #ffffff;
+            color: $second;
+            border-color: $second;
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 20px;
+        top: auto;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .swiper-pagination-bullet {
+        border: 1px solid #fff;
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+        opacity: 1;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff;
+    }
+    
+    .swiper-button-next, .swiper-button-prev {
+        bottom: 0;
+        right: 0;
+        left: auto;
+        top: auto;
+        height: 27px;
+        width: 38px;
+        background-color: $third;
+
+        &::after {
+            font-size: 14px;
+            color: #ffffff;
+        }
+    }
+    .swiper-button-prev {
+        right: 28px;
+    }
+}

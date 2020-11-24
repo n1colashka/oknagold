@@ -25,6 +25,28 @@ $(function () {
         $($menuItem).addClass('active');
       }
     });
+  }
+
+  function initHeroSlider() {
+    var heroSlider = new Swiper('.hero__slider', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  }
+
+  function changeHeader() {
+    if (window.pageYOffset >= 100) {
+      $('.header').addClass('active');
+    } else {
+      $('.header').removeClass('active');
+    }
   } // Функции работающие только на мобильных устройствах
 
 
@@ -37,11 +59,5 @@ $(function () {
     $(window).on('scroll', changeHeader);
   }
 
-  function changeHeader() {
-    if (window.pageYOffset >= 100) {
-      $('.header').addClass('active');
-    } else {
-      $('.header').removeClass('active');
-    }
-  }
+  initHeroSlider();
 });

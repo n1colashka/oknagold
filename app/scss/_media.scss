@@ -25,6 +25,7 @@
     }
 
     .header {
+        top: 30px;
         &__bottom-row-right {
             margin-left: 1.25rem;
         }
@@ -36,6 +37,13 @@
 }
 
 @media (max-width: 1400px) {
+    .hero {
+        &__item-title {
+            font-size: 62px;
+            line-height: 62px;
+            margin-bottom: 70px;
+        }
+    }
     .header {
         width: 98%;
     }
@@ -58,6 +66,13 @@
 }
 
 @media (max-width: 1280px) {
+    .hero {
+        &__item-title {
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 40px;
+        }
+    }
     .header__bottom-navigation-wrapper {
         min-width: auto;
     }
@@ -191,12 +206,61 @@
 }
 
 @media (max-width: 1024px) {
+    .header__bottom-navigation {
+        li {
+            font-size: 20px;
+        }
+    }
+    .hero {
+
+        &__item-img {
+            max-width: 100%;
+        }
+        &__item-title {
+            font-size: 42px;
+            line-height: 42px;
+        }
+        &__item-inner {
+            margin-top: 300px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
 }
 
 @media (max-width: 768px) {
+    .btn {
+        font-size: 1.5rem;
+    }
+    .hero {
+        min-height: auto;
+        &__item-title {
+            line-height: 36px;
+            font-size: 36px;
+        }
+        &__item {
+            min-height: auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__item-inner {
+            margin: 0;
+            padding: 0 0 40px 0;
+            margin-top: 150px;
+            margin-bottom: 50px;
+        }
+        &__item-img {
+            height: 400px;
+        }
+        .container {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 15px;
+        }
+    }
     .header {
         &__logo img {
             width: 5rem;

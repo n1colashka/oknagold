@@ -29,6 +29,27 @@ $(function() {
         });
     }
 
+    function initHeroSlider() {
+        var heroSlider = new Swiper('.hero__slider', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    }
+
+    function changeHeader() {
+        if (window.pageYOffset >= 100) {
+            $('.header').addClass('active');
+        } else {
+            $('.header').removeClass('active');
+        }
+    }
     
     // Функции работающие только на мобильных устройствах
     if (window.innerWidth <= 1280) {
@@ -41,13 +62,6 @@ $(function() {
     }
 
 
-    function changeHeader() {
-        if (window.pageYOffset >= 100) {
-            $('.header').addClass('active');
-        } else {
-            $('.header').removeClass('active');
-        }
-    }
-
+    initHeroSlider();
 
 });
