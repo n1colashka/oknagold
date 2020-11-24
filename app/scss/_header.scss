@@ -207,6 +207,7 @@
                 display: block;
                 padding: 10px;
                 padding-left: 20px;
+                background-color: inherit;
             }
         }
 
@@ -230,7 +231,7 @@
             // Список меню 1 уровня
             & > ul {
                 overflow-y: auto;
-                max-height: 400px;
+                height: 400px;
                 min-width: 25rem;
                 direction: rtl;
                 background-color: #53494e;
