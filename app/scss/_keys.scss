@@ -1,48 +1,118 @@
 .keys {
 
-    &__inner {
+    &__wrapper {
+        position: relative;
     }
 
-    .container {
-        max-width: 1610px;
-    }
-    
     &__orange-box {
+        color: #fff;
+        flex-basis: 66.666%;
+    }
+
+    .keys__box-col--list {
+        max-width: 550px;
+        margin-left: 30px;
+        ul {
+            li {
+                position: relative;
+                padding-left: 20px;
+                &::before {
+                    position: absolute;
+                    content: "›";
+                    font-size: 36px;
+                    left: 0;
+                    top: 0;
+                    @include font('ubuntu');
+                }
+            }
+        }
+    }
+
+    &__orange-box-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
         background-color: $main;
     }
 
     &__orange-box-inner {
         display: flex;
         justify-content: space-between;
-        margin-left: auto;
     }
 
     &__keys-box-inner {
-        margin-right: auto;
     }
 
     &__box-col {
+        max-width: 415px;
+        width: 100%;
+    }
+
+    &__box-bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 33.333%;
+        z-index: -1;
+        background-color: $grey;
     }
 
     &__content {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         min-height: 545px;
+        padding-bottom: 80px;
+        font-size: 22px;
+        line-height: 30px;
     }
     
     &__box {
-        background-color: $grey;
+        flex-basis: 33.333%;
+        .keys__box-col {
+            margin-left: auto;
+        }
     }
 
     &__list {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-left: -55px;
+        margin-right: -55px;
+        margin-top: -80px;
     }
 
     &__item {
-        max-width: 570px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include font('ubuntu-bold');
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.075em;
+        color: #ffffff;
+        text-transform: uppercase;
         width: 100%;
+        max-width: 570px;
         height: 470px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 80px;
+        margin-left: 55px;
+        margin-right: 55px;
+        text-align: center;
+
+
+        span {
+            display: block;
+            max-width: 260px;
+        }
     }
 }
