@@ -113,6 +113,15 @@
 }
 
 @media (max-width: 1280px) {
+    .benefits {
+        &__list li {
+            max-width: 255px;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
     .hero {
         &__item-title {
             font-size: 48px;
@@ -253,6 +262,11 @@
 }
 
 @media (max-width: 1024px) {
+    
+    .title {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
     .keys {
         &__content {
             flex-wrap: wrap;
@@ -306,10 +320,33 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 800px) {
+    .benefits {
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+        &__title {
+            margin-bottom: 40px;    
+        }
+        
+        &__list {
+            justify-content: center;
+            li {
+                max-width: 100%;
+                p {
+                    max-width: 255px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
+    
+    .title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
     .keys {
         &__list {
             flex-wrap: wrap;
@@ -387,6 +424,18 @@
 }
 
 @media (max-width: 480px) {
+
+    .benefits {
+        &__list {
+            justify-content: center;
+            li {
+                width: auto;
+                p {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
     
     .header {
         &__schedule {
