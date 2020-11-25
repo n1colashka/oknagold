@@ -1,15 +1,9 @@
 .partners {
-    position: relative;
-    &__bg {
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        max-width: 810px;
-        height: 820px;
-        width: 100%;
+
+    padding-bottom: 140px;
+    &__box {
+        position: relative;
+        margin-bottom: 150px;
     }
 
     &__title {
@@ -58,6 +52,22 @@
         img {
             object-fit: cover;
         }
+    }
+
+    &__btn {
+        border-color: $main;
+        color: $main;
+        line-height: 1.5;
+        padding: 17px 50px;
+
+        &:hover {
+            background-color: $main;
+            color: #ffffff;
+        }
+    }
+
+    &__btn-wrapper {
+        text-align: center;
     }
 
 }
