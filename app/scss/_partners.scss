@@ -1,0 +1,63 @@
+.partners {
+    position: relative;
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 810px;
+        height: 820px;
+        width: 100%;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        position: absolute;
+        bottom: 40px;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $grey;
+        padding: 45px 90px;
+        width: 93%;
+    }
+
+    &__item {
+        max-width: 285px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    &__container {
+        max-width: 1640px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        display: flex;
+        min-width: 50%;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-size: 30px;
+        line-height: 42px;
+        b {
+            @include font('ubuntu-bold');
+        }
+    }
+
+    &__img {
+        img {
+            object-fit: cover;
+        }
+    }
+
+}
