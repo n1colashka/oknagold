@@ -1,0 +1,49 @@
+.contacts-page {
+    padding: 110px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 630px;
+        width: 100%;
+    }
+
+
+    &__list {
+        margin-right: 100px;
+        li {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            line-height: 48px;
+            letter-spacing: 0.05em;
+            margin-bottom: 60px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                display: block;
+            }
+            
+            img {
+                margin-right: 50px;
+                width: 51px;
+            }
+        }
+    }
+
+    .contacts-page__multiple-links {
+        align-items: flex-start;
+        img {
+            margin-top: 10px;
+        }
+    }
+
+    &__map {
+        border: 8px solid $main;
+        width: 100%;
+    }
+}
