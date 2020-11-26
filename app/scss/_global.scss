@@ -131,4 +131,26 @@ input::-webkit-inner-spin-button {
     li:hover {
         text-decoration: underline;
     }
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+
+        a {
+            display: inline-block;
+            position: relative;
+            margin-right: 5px;
+            &::after {
+                content: ">";
+                margin-left: 7px;
+            }
+
+            
+        }
+        &:last-child {
+            a::after {
+                content: none;
+            }
+        }
+    }
 }
