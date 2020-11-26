@@ -127,4 +127,8 @@ input::-webkit-inner-spin-button {
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
+
+    li:hover {
+        text-decoration: underline;
+    }
 }

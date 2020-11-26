@@ -424,6 +424,31 @@
 }
 
 @media (max-width: 1024px) {
+    .text-page {
+        margin-bottom: 0;
+        
+        &__text {
+            font-size: 20px;
+            line-height: 28px;
+
+            p {
+                margin-bottom: 20px;
+            }
+        }
+        
+        &__inner {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        &__partners {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 0;
+            li {
+                margin-bottom: 50px;
+            }
+        }
+    }
     .us {
         padding: 30px 0;
         &__info {
@@ -634,6 +659,37 @@
 }
 
 @media (max-width: 768px) {
+    .benefits {
+        &__text {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .benefits-page {
+        .benefits__list {
+            li:nth-child(2) {
+                order: 5;
+            }
+        }
+    }
+    .text-page {
+        
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__box {
+            width: 100%;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__partners li {
+            max-width: 140px;
+        }
+    }
     .contacts {
         &__btn {
             font-size: 20px;
@@ -917,6 +973,16 @@
 }
 
 @media (max-width: 400px) {
+    .text-page {
+        &__partners {
+            margin-left: -5px;
+            margin-right: -5px;
+            li {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+    }
     .header {
         &__center-row {
             text-align: left;
