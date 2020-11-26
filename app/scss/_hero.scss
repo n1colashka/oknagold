@@ -32,7 +32,7 @@
     &__item-inner {
         margin-top: 23%;
         padding-right: 30px;
-        width: 100%;
+        width: calc(100% - 2px);
         position: relative;
         padding-bottom: 50px;
     }

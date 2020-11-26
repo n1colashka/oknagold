@@ -710,6 +710,16 @@
 }
 
 @media (max-width: 600px) {
+    .footer {
+        padding: 50px 0;
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__list {
+            max-width: 100%;
+        }
+    }
     .keys {
         &__item {
             height: 360px;
@@ -986,3 +996,11 @@
     }
 }
 
+
+@media (min-width: 1920px) {
+    .contacts {
+        &__phone {
+            bottom: 50px;
+        }
+    }
+}
