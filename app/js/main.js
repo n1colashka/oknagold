@@ -52,6 +52,7 @@ $(function() {
     }
 
     function initScrollToTop() {
+        $('.scroll-top').fadeOut();
             $(window).on('scroll', (function () {
                 if ($(this).scrollTop() > 0) {
                     $('.scroll-top').fadeIn();
