@@ -254,6 +254,7 @@
     &__btn {
         color: $third;
         border-color: $third;
+        background-color: transparent;
         &:hover {
             background-color: $third;
             color: #fff;
