@@ -18,6 +18,22 @@
     }
 }
 
+@media (max-width: 1600px) {
+    .us {
+        &__box {
+            width: 30%;
+        }
+
+        &__title {
+            margin-right: 165px;
+        }
+
+        &__info {
+            padding-right: 30px;
+        }
+    }
+}
+
 @media (max-width: 1500px) {
     body {
         font-size: 16px;
@@ -113,6 +129,11 @@
 }
 
 @media (max-width: 1280px) {
+    .us {
+        &__title {
+            margin-right: 73px;
+        }
+    }
     .partners {
         &__list {
             padding: 30px 45px;
@@ -278,7 +299,41 @@
 }
 
 @media (max-width: 1024px) {
-    
+    .us {
+        padding: 30px 0;
+        &__info {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &__list {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__content {
+            margin: 0;
+        }
+        
+        &__title {
+            margin-right: 0;
+            max-width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: $second;
+            margin-bottom: 40px;
+        }
+
+        &__box {
+            display: none;
+        }
+    }
     
     .keys {
         &__content {

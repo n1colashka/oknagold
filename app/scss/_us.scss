@@ -1,0 +1,57 @@
+
+.us {
+    position: relative;
+
+    &__box {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $second;
+        padding: 20px;
+        padding-left: 0;
+        width: 40%;
+        z-index: -1;
+    }
+
+    &__content {
+        margin-bottom: 120px;
+        margin-top: 120px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__title {
+        max-width: 330px;
+        margin-right: 380px;
+    }
+
+    &__info {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    &__list {
+        list-style-type: '✓';
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        li {
+            @include font('minion');
+            color: $second;
+
+            span {
+                display: block;
+                @include font('ubuntu');
+                color: $black;
+                padding-left: 3px;
+            }
+        }
+    }
+}
