@@ -1,3 +1,27 @@
+@media (max-width: 1900px) {
+    .contacts {
+        &__plan {
+            padding: 20px 100px;
+        }
+    }
+}
+
+@media (max-width: 1780px) {
+    .contacts {
+        &__plan {
+            padding: 20px 85px;
+        }
+    }
+}
+
+@media (max-width: 1670px) {
+    .contacts {
+        &__plan {
+            padding: 20px 15px;
+        }
+    }
+}
+
 @media (max-width: 1740px) {
     body {
         font-size: 18px;
@@ -129,6 +153,51 @@
 }
 
 @media (max-width: 1280px) {
+    .scroll-top {
+        width: 65px;
+        height: 65px;
+        &::after {
+            border-width: 0 15.5px 20px 15.5px;
+        }
+    }
+    .contacts {
+        &__text {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__btn {
+            font-size: 30px;
+            margin-top: 35px;
+            padding: 15px 35px;
+        }
+        &__phone {
+            bottom: 0;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__plan {
+            bottom: 100px;
+            li img {
+                width: 70%;
+            }
+        }
+        &__inner {
+            align-items: center;
+        }
+        
+        &__form {
+            padding-bottom: 30px;
+            padding-left: 15px;
+            padding-top: 30px;
+        }
+
+        &__info {
+            padding-top: 30px;
+            padding-bottom: 290px;
+            padding-right: 15px;
+        }
+    }
     .us {
         &__title {
             margin-right: 73px;
@@ -422,6 +491,29 @@
 }
 
 @media (max-width: 991px) {
+    .contacts {
+        &__btn {
+            font-size: 24px;
+            margin-top: 30px;
+            padding: 15px 35px;
+        }
+        &__plan {
+            bottom: 120px;
+
+            li img {
+                width: 50%;
+            }
+        }
+        &__plan-list {
+            align-items: flex-end;
+        }
+        &__form {
+            input,textarea {
+                font-size: 24px;
+                padding: 15px 30px;
+                }
+            }
+        }
     .partners {
         &__img {
             margin: 0 -15px;
@@ -455,6 +547,59 @@
 }
 
 @media (max-width: 768px) {
+    .contacts {
+        &__btn {
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 13px 25px;
+        }
+        &__phone {
+            bottom: 5px;
+        }
+        
+        &__plan {
+            position: static;
+            width: 100%;
+            margin: 0;
+            margin-top: 30px;
+            padding-bottom: 0;
+        }
+
+        &__plan-list {
+            flex-wrap: wrap;
+            justify-content: center;
+            li {
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 20px;
+            }
+        }
+        &__inner {
+            flex-direction: column;
+            margin: 0 -15px;
+        }
+
+        &__bg-info,
+        &__bg-form {
+            display: none;
+        }
+        
+        &__form {
+            width: 100%;
+            padding: 30px 15px;
+            background-color: $second;
+            input,textarea {
+                font-size: 22px;
+                }
+            }
+
+        &__info {
+            width: 100%;
+            padding: 30px 15px;
+            background-color: $grey;
+        }
+    }
+    
     .why {
         &__box {
             padding-top: 50px;
@@ -584,6 +729,19 @@
 }
 
 @media (max-width: 480px) {
+    .contacts {
+        &__form {
+            padding-bottom: 130px;
+        }
+        &__btn {
+            width: 100%;
+        }
+        &__phone {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
     .why__box-text {
         font-size: 22px;
         line-height: 35px;

@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    position: relative;
     @include font('ubuntu');
     font-size: 22px;
     line-height: 30px;
@@ -88,4 +89,32 @@ input[type='number'] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 330px;
+    right: 15px;
+    display: block;
+    width: 108px;
+    height: 108px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $second;
+    box-shadow: 0px 0px 48.96px 2.04px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 27.5px 35px 27.5px;
+        border-color: transparent transparent #ffffff transparent;
+    }
 }

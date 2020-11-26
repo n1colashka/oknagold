@@ -47,6 +47,22 @@ $(function () {
     } else {
       $('.header').removeClass('active');
     }
+  }
+
+  function initScrollToTop() {
+    $(window).on('scroll', function () {
+      if ($(this).scrollTop() > 0) {
+        $('.scroll-top').fadeIn();
+      } else {
+        $('.scroll-top').fadeOut();
+      }
+    });
+    $('.scroll-top').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 400);
+      return false;
+    });
   } // Функции работающие только на мобильных устройствах
 
 
@@ -60,4 +76,5 @@ $(function () {
   }
 
   initHeroSlider();
+  initScrollToTop();
 });
