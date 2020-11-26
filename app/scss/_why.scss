@@ -1,0 +1,70 @@
+.why {
+
+    &__inner {
+    }
+
+    &__box {
+        background-color: $main;
+        color: #ffffff;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__body-title {
+        @include font('ubuntu-bold');
+        margin-bottom: 35px;
+    }
+
+    &__box-text {
+        font-size: 30px;
+        line-height: 42px;
+        max-width: 805px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__container {
+        max-width: 1640px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    &__content {
+        max-width: 835px;
+    }
+
+    &__body {
+        font-size: 22px;
+        line-height: 30px;
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__img {
+        margin-top: -150px;
+        height: 1120px;
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__btn {
+        margin-top: 45px;
+        background-color: $main;
+        color: #ffffff;
+        &:hover {
+            background-color: #ffffff;
+            color: $main;
+        }
+    }
+}
