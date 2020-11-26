@@ -57,6 +57,7 @@ h6 {
     @include font('ubuntu-bold');
     font-size: 3rem;
     line-height: 4.5rem;
+    word-break: break-word;
 }
 
 .btn {
@@ -121,4 +122,9 @@ input::-webkit-inner-spin-button {
 
 .inner-page {
     margin-top: 300px;
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
 }
