@@ -56,6 +56,11 @@
             padding-right: 30px;
         }
     }
+    .price-page {
+        &__menu {
+            margin-right: 50px;
+        }
+    }
 }
 
 @media (max-width: 1500px) {
@@ -123,6 +128,17 @@
 }
 
 @media (max-width: 1400px) {
+    .price-page__menu-list {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 60px;
+    }
+    .price-page__menu {
+        width: 340px;
+    }
+    .price-page__table td {
+        padding: 10px 20px;
+    }
     .scroll-top {
         width: 65px;
         height: 65px;
@@ -165,14 +181,32 @@
 }
 
 @media (max-width: 1280px) {
+    .inner-page {
+        margin-top: 120px;
+    }
+    .price-page {
+        margin-top: 180px;
+        &__free {
+            margin-left: 20px;
+        }
+        &__col-title {
+            font-size: 26px;
+            margin-bottom: 35px;
+        }
+    }
+    .price-page__td-wrapper {
+        align-items: center;
+        flex-direction: column;
+        img {
+            margin-bottom: 20px;
+        }
+    }
     .product-page {
         .breadcrumbs {
             top: 150px;
         }
     }
-    .inner-page {
-        margin-top: 120px;
-    }
+    
     .contacts-page {
         &__inner {
             align-items: center;
@@ -423,6 +457,24 @@
     }
 }
 
+@media (max-width: 1120px) {
+    
+    .price-page {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__menu {
+            width: 100%;
+        }
+
+        &__menu-list {
+            padding-right: 15px;
+            margin-right: -15px;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .text-page {
         margin-bottom: 0;
@@ -659,6 +711,114 @@
 }
 
 @media (max-width: 768px) {
+    .price-page {
+        margin-top: 130px;
+    }
+    .contacts {
+        &__text {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    .comments {
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+            word-break: break-word;
+        }
+    }
+    .price-page {
+        
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            margin-bottom: 25px;
+        }
+
+        &__menu-list {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 50px;
+        }
+        &__table  {
+            width: 100%;
+            td {
+                padding: 5px;
+                width: 100%;
+            }
+
+            b {
+                max-width: 100%;
+            }
+
+            .price-page__profile {
+                width: 100%;
+                background-color: $second;
+            }
+
+            .price-page__td-wrapper {
+                align-items: flex-end;
+                img {
+                    object-fit: contain;
+                    padding-left: 20px;
+                }
+            }
+
+            table tr {
+                border: 1px solid $third;
+                padding: 5px;
+            }
+
+            td, th {
+                border: none;
+            }
+            
+            table th, table td {
+                padding: 10px;
+                text-align: center;
+                border-right: 1px solid $third;
+            }
+            
+            table th {
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+
+            table {
+                border: 0;
+                width: 100%;
+              }
+              table thead {
+                display: none;
+              }
+              table tr {
+                margin-bottom: 10px;
+                display: block;
+                border-bottom: 2px solid #ddd;
+              }
+              table td {
+                display: block;
+                text-align: right;
+                font-size: 13px;
+                border-bottom: 1px dotted #ccc;
+                border-right: 1px solid transparent;
+              }
+              table td:last-child {
+                border-bottom: 0;
+              }
+              table td:before {
+                content: attr(data-label);
+                float: left;
+                text-transform: uppercase;
+                font-weight: bold;
+              }
+        }
+    }
+    .footer__list {
+        font-size: 20px;
+        line-height: 24px;
+    }
     .benefits {
         &__text {
             font-size: 24px;
@@ -852,7 +1012,55 @@
     }
 }
 
+@media (max-width: 760px) {
+    .price-page {
+        &__window {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        &__rating-wrapper {
+            margin-top: 80px;
+            padding-bottom: 50px;
+        }
+
+        &__col {
+            margin: 0;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+
+        &__img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
 @media (max-width: 600px) {
+    .comments {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        &__img {
+            img {
+                width: 90px;
+            }
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        &__author {
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
     .contacts-page {
         &__map iframe {
             height: 350px;
@@ -887,6 +1095,57 @@
 }
 
 @media (max-width: 480px) {
+    .comments {
+        &__btn {
+            padding: 10px 15px;
+        }
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__head {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .price-page {
+        &__window {
+            margin-bottom: 0;
+        }
+        &__col-title {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        &__col-list {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__info-title {
+            font-size: 24px;
+            line-height: 34px;
+            margin-bottom: 30px;
+        }
+
+        &__rating-wrapper {
+            justify-content: center;
+            margin-top: 40px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .rating {
+
+        
+        &__title {
+            margin-right: 8px;
+        }
+    }
     
     .product-page {
         padding-top: 120px;
@@ -973,6 +1232,10 @@
 }
 
 @media (max-width: 400px) {
+    .comments__title {
+        font-size: 32px;
+        line-height: 44px;
+    }
     .text-page {
         &__partners {
             margin-left: -5px;
@@ -987,6 +1250,15 @@
         &__center-row {
             text-align: left;
         }
+    }
+}
+
+@media (max-width: 350px) {
+    .price-page__rating-wrapper {
+        flex-direction: column;
+    }
+    .rating__title {
+        margin-right: 0;
     }
 }
 

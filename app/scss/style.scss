@@ -1,12 +1,20 @@
-// Base
+// Base //
+
 @import "fonts";
 @import "vars";
 @import "global";
+@import "rating";
 
-// Header
+// Base //
+
+// Header //
+
 @import "header";
 
-// Sections
+// Header //
+
+
+// Sections //
 
 @import "hero";
 @import "keys";
@@ -16,7 +24,9 @@
 @import "why";
 @import "contacts";
 
-// Pages
+// Sections //
+
+// Pages //
 
 // Contacts //
 @import "contacts-page";
@@ -27,9 +37,21 @@
 @import "text-page";
 // Windows //
 
-// Footer
+// Price //
+@import "price-page";
+// Price //
+
+// Pages //
+
+// Footer //
+
 @import "footer";
 
-// Media
+// Footer //
+
+// Media //
+
 @import "media";
+
+// Media //
 
