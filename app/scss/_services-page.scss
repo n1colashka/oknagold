@@ -1,0 +1,67 @@
+
+.services-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: 60px;
+        flex-basis: calc(50% - 300px);
+        ul {
+            list-style-type: '✓';
+            padding-left: 20px;
+        }
+    }
+
+    &__item-title {
+        @include font('ubuntu-bold');
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+
+    &__img {
+        width: 665px;
+        height: 440px;
+        margin-bottom: 30px;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        font-size: 22px;
+        line-height: 30px;
+        p {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            color: $main;
+
+            li {
+                padding-left: 5px;
+            }
+            
+            span {
+                color: $black;
+            }
+        }
+    }
+}
