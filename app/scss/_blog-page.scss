@@ -1,0 +1,74 @@
+.blog-page {
+    padding-bottom: 120px;
+    padding-top: 60px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        margin: 0 -60px;
+    }
+
+    &__item {
+        position: relative;
+        max-width: 445px;
+        min-height: 445px;
+        margin-bottom: 80px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    &__img {
+        margin-bottom: 35px;
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__item-title {
+        display: block;
+        @include font('ubuntu-bold');
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        @include font('ubuntu-medium');
+        display: inline-block;
+        font-size: 22px;
+        line-height: 30px;
+        color: $main;
+        padding-right: 90px;
+        background-repeat: no-repeat;
+        background-position: center right;
+        transition: .3s ease;
+        &:hover {
+            background-position: center right 10px;
+        }
+    }
+
+    &__date {
+        @include font('ubuntu-medium');
+        font-size: 22px;
+        line-height: 30px;
+        display: block;
+        background-color: $second;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: $black;
+        padding: 25px 40px;
+    }
+    &__pagination-bottom {
+        margin-top: -20px;
+    }
+}

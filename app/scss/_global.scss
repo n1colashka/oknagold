@@ -156,3 +156,63 @@ input::-webkit-inner-spin-button {
         }
     }
 }
+
+.pagination {
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 -14px;
+    }
+    li {
+        @include font('ubuntu-light');
+        color: #a79fa3;
+        font-size: 24px;
+        line-height: 42px;
+        transition: .3s ease;
+        &:hover {
+            color: $main;
+        }   
+    }
+
+    &__item {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+    
+    &__current {
+        @include font('ubuntu-bold');
+    }
+    &__prev {
+        a {
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 8.5px 13px 8.5px 0;
+            border-color: transparent #a79fa3 transparent transparent;
+            transition: .3s ease;
+        }
+        &:hover {
+            a {
+                border-color: transparent $main transparent transparent;
+            }
+        }
+    }
+    &__next {
+        a {
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 8.5px 0 8.5px 13px;
+            border-color: transparent transparent transparent #a79fa3;
+            transition: .3s ease;
+        }
+        &:hover {
+            a {
+                border-color: transparent transparent transparent $main;
+            }
+        }
+    }
+}
