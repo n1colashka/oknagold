@@ -64,6 +64,28 @@ $(function () {
       }, 400);
       return false;
     });
+  }
+
+  function initCalculatorSlider() {
+    if (document.querySelector('.calculator__sliders')) {
+      var galleryThumbs = new Swiper('.calculator__slider-thumbs', {
+        spaceBetween: 0,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+      var galleryTop = new Swiper('.calculator__slider-big', {
+        spaceBetween: 0,
+        thumbs: {
+          swiper: galleryThumbs
+        }
+      });
+    }
   } // Функции работающие только на мобильных устройствах
 
 
@@ -78,4 +100,5 @@ $(function () {
 
   initHeroSlider();
   initScrollToTop();
+  initCalculatorSlider();
 });
