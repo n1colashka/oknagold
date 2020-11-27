@@ -90,6 +90,30 @@ $(function() {
             });
         }
     }
+
+    function initGalleryTabs() {
+        if ('.gallery-page') {
+            
+            $('.gallery-page__tabs-content.active').show();
+            
+            $('.gallery-page__tabs-list').on('click', e => {
+                const tabsItems = document.querySelectorAll('.gallery-page__tabs-item');
+                if (e.target.closest('.gallery-page__tabs-item')) {
+                    document.querySelectorAll('.gallery-page__tabs-content').forEach((item, i) => {
+                        if (item.dataset.tab === e.target.dataset.tab) {
+                            $(item).show(500);
+                            $(item).addClass('active');
+                            $(tabsItems[i]).addClass('active');
+                        } else {
+                            $(item).hide(500);
+                            $(item).removeClass('active');
+                            $(tabsItems[i]).removeClass('active');
+                        }
+                    });
+                }
+            });
+        }
+    }
     
     // Функции работающие только на мобильных устройствах
     if (window.innerWidth <= 1280) {
@@ -105,4 +129,5 @@ $(function() {
     initHeroSlider();
     initScrollToTop();
     initCalculatorSlider();
+    initGalleryTabs();
 });

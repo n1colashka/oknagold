@@ -180,7 +180,7 @@ input::-webkit-inner-spin-button {
         margin-right: 14px;
     }
     
-    &__current {
+    .pagination__current {
         @include font('ubuntu-bold');
     }
     &__prev {

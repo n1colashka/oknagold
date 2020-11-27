@@ -46,7 +46,7 @@
 
 @media (max-width: 1620px) {
     .blog-page {
-        &__list {
+        &__tabs-inner {
             margin: 0 -30px;
         }
         &__item {
@@ -59,6 +59,17 @@
 }
 
 @media (max-width: 1600px) {
+    .gallery-page {
+        &__tabs-inner {
+            margin-left: -30px;
+            margin-right: -30px;
+        }
+        &__item {
+            flex-basis: calc(33.333% - 60px);
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
     .us {
         &__box {
             width: 30%;
@@ -507,6 +518,17 @@
 }
 
 @media (max-width: 1200px) {
+    .gallery-page {
+        &__tabs-inner {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+        &__item {
+            flex-basis: calc(50% - 40px);
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
     .why {
         padding-bottom: 50px;
         &__container {
@@ -825,6 +847,21 @@
 }
 
 @media (max-width: 768px) {
+    .gallery-page {
+        padding-top: 20px;
+        padding-bottom: 50px;
+        &__tabs-item {
+            font-size: 15px;
+            padding: 10px 15px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        &__tabs-list {
+            margin: 0;
+        }
+    }
     .blog-page {
         padding-bottom: 50px;
     }
@@ -1178,6 +1215,22 @@
 }
 
 @media (max-width: 760px) {
+    .gallery-page {
+        &__tabs-inner {
+            flex-direction: column;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: -50px;
+        }
+        &__item {
+            flex-basis: 100%;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            height: 450px;
+            margin-bottom: 50px;
+        }
+    }
     .price-page {
         &__window {
             flex-direction: column;
@@ -1310,6 +1363,11 @@
 }
 
 @media (max-width: 480px) {
+    .gallery-page {
+        &__item {
+            height: 350px;
+        }
+    }
     .calculator {
         &__right {
             max-width: 100%;
