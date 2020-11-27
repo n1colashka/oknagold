@@ -1,0 +1,225 @@
+.article-page {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__head {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 645px;
+        margin-bottom: 30px;
+        padding: 20px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba($third, .75);
+        }
+    }
+
+    &__title {
+        position: relative;
+        z-index: 5;
+        @include font('ubuntu-bold');
+        font-size: 48px;
+        line-height: 72px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    &__date {
+        @include font('ubuntu-bold');
+        position: absolute;
+        z-index: 7;
+        right: 0;
+        top: 0;
+        background-color: $second;
+        color: $black;
+        padding: 20px 45px;
+    }
+
+    &__text {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        list-style-type: '✓';
+        padding-left: 20px;
+        color: $second;
+        margin-bottom: 30px;
+
+        span {
+            color: $black;
+        }
+        
+        li {
+            padding-left: 5px;
+        }
+    }
+
+    &__box {
+        font-size: 30px;
+        line-height: 42px;
+        padding: 55px 85px;
+        background-color: $main;
+        margin-bottom: 50px;
+        color: #ffffff;
+
+        b {
+            @include font('ubuntu-bold');
+        }
+    }
+
+    &__text-title {
+        @include font('ubuntu-bold');
+        margin-bottom: 40px;
+    }
+
+    &__list-text {
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        margin-top: 30px;
+        margin-bottom: 65px;
+        max-height: 450px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__share {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid $black;
+    }
+
+    &__share-box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__rating-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__share-title {
+        @include font('ubuntu-bold');
+        font-size: 24px;
+        line-height: 30px;
+        margin-right: 45px;
+        margin-top: 10px;
+    }
+
+    .comments__list {
+        padding-right: 150px;
+    }
+
+    &__tags {
+        margin-left: 100px;
+        flex-shrink: 0;
+        margin-top: 60px;
+    }
+
+    &__tags-title {
+        @include font('ubuntu-bold');
+        font-size: 48px;
+        line-height: 72px;
+        margin-bottom: 40px;
+    }
+
+    &__tags-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        li {
+            display: inline-block;
+            @include font('ubuntu-bold');
+            font-size: 20px;
+            color: $third;
+            border: 2px solid $third;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            border-radius: 15px;
+            transition: .3s ease;
+
+            a {
+                display: block;
+                padding: 12px 30px;
+            }
+
+            &:hover {
+                background-color: $third;
+                color: #ffffff;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.rating {
+
+    &__title {
+    }
+}
+.comments {
+
+    &__title {
+    }
+
+    &__form {
+    }
+
+    &__btn {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__img {
+    }
+
+    &__info {
+    }
+
+    &__head {
+    }
+
+    &__author {
+    }
+
+    &__text {
+    }
+}
+.btn {
+}

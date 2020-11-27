@@ -212,7 +212,10 @@
 }
 
 .rating__title {
-    margin-right: 35px;
+    @include font('ubuntu-bold');
+    font-size: 24px;
+    line-height: 30px;
+    margin-right: 45px;
 }
 
 .comments {
@@ -229,7 +232,7 @@
     &__form {
         background-color: $grey;
         padding: 25px 20px;
-        margin-bottom: 85px;
+        margin-bottom: 30px;
 
         form {
             display: flex;
@@ -262,10 +265,25 @@
     }
 
     &__item {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 50px;
+        padding-top: 55px;
+        padding-bottom: 50px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 190px;
+            height: 1px;
+            background-color: $black;
+        }
+
+        &:first-child::before {
+            content: none;
+        }
     }
 
     &__img {
