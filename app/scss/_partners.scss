@@ -3,11 +3,11 @@
     padding-bottom: 140px;
     &__box {
         position: relative;
-        margin-bottom: 150px;
+        margin-bottom: 9.375rem;
     }
 
     &__title {
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
     }
 
     &__list {
@@ -18,14 +18,14 @@
         justify-content: space-around;
         align-items: center;
         background-color: $grey;
-        padding: 45px 90px;
+        padding: 2.8125rem 5.625rem;
         width: 93%;
     }
 
     &__item {
-        max-width: 285px;
-        margin-left: 40px;
-        margin-right: 40px;
+        max-width: 17.8125rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
     }
 
     &__container {
@@ -37,12 +37,12 @@
     &__content {
         display: flex;
         min-width: 50%;
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
     }
 
     &__text {
-        font-size: 30px;
-        line-height: 42px;
+        font-size: 1.875rem;
+        line-height: 2.625rem;
         b {
             @include font('ubuntu-bold');
         }
@@ -58,7 +58,7 @@
         border-color: $main;
         color: $main;
         line-height: 1.5;
-        padding: 17px 50px;
+        padding: 1.0625rem 3.125rem;
 
         &:hover {
             background-color: $main;

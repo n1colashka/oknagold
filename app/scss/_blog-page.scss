@@ -11,23 +11,23 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
-        padding-top: 60px;
-        margin: 0 -60px;
+        padding-top: 3.75rem;
+        margin: 0 -3.75rem;
     }
 
     &__item {
         position: relative;
         max-width: 445px;
         min-height: 445px;
-        margin-bottom: 80px;
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-bottom: 5rem;
+        margin-left: 3.75rem;
+        margin-right: 3.75rem;
     }
 
     &__img {
-        margin-bottom: 35px;
+        margin-bottom: 2.1875rem;
         img {
-            height: 300px;
+            height: 18.75rem;
             width: 100%;
             object-fit: cover;
         }
@@ -36,18 +36,18 @@
     &__item-title {
         display: block;
         @include font('ubuntu-bold');
-        font-size: 30px;
-        line-height: 42px;
-        margin-bottom: 20px;
+        font-size: 1.875rem;
+        line-height: 2.625rem;
+        margin-bottom: 1.25rem;
     }
 
     &__btn {
         @include font('ubuntu-medium');
         display: inline-block;
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 1.375rem;
+        line-height: 1.875rem;
         color: $main;
-        padding-right: 90px;
+        padding-right: 5.625rem;
         background-repeat: no-repeat;
         background-position: center right;
         transition: .3s ease;
@@ -58,17 +58,17 @@
 
     &__date {
         @include font('ubuntu-medium');
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 1.375rem;
+        line-height: 1.875rem;
         display: block;
         background-color: $second;
         position: absolute;
         top: 0;
         right: 0;
         color: $black;
-        padding: 25px 40px;
+        padding: 1.5625rem 2.5rem;
     }
     &__pagination-bottom {
-        margin-top: -20px;
+        margin-top: -1.25rem;
     }
 }

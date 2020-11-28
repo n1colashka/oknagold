@@ -3,9 +3,9 @@
 
     &__info {
         width: 50%;
-        padding-top: 150px;
+        padding-top: 9.375rem;
         padding-bottom: 400px;
-        padding-right: 115px;
+        padding-right: 7.1875rem;
     }
 
     &__inner {
@@ -15,8 +15,8 @@
 
     &__text {
         @include font('ubuntu-bold');
-        font-size: 30px;
-        line-height: 42px;
+        font-size: 1.875rem;
+        line-height: 2.625rem;
     }
 
     &__plan {
@@ -59,12 +59,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 105px;
-        height: 105px;
+        width: 6.5625rem;
+        height: 6.5625rem;
 
         img {
             width: 100%;
-            height: 100px;
+            height: 100%;
             object-fit: cover;
         }
     }
@@ -94,9 +94,9 @@
     }
 
     &__form {
-        padding-bottom: 100px;
-        padding-left: 115px;
-        padding-top: 100px;
+        padding-bottom: 6.25rem;
+        padding-left: 7.1875rem;
+        padding-top: 6.25rem;
         width: 50%;
 
         input, 
@@ -104,8 +104,8 @@
             width: 100%;
             display: block;
             @include font('ubuntu-light');
-            font-size: 30px;
-            padding: 22px 60px;
+            font-size: 1.875rem;
+            padding: 1.375rem 3.75rem;
             border: none;
             border-radius: 15px;
             box-shadow: 0px 0px 48.96px 2.04px rgba(0, 0, 0, 0.1);
@@ -132,9 +132,9 @@
     }
 
     &__btn {
-        font-size: 36px;
-        margin-top: 45px;
-        padding: 20px 50px;
+        font-size: 2.25rem;
+        margin-top: 2.8125rem;
+        padding: 1.25rem 3.125rem;
 
         &:hover {
             background-color: $black;

@@ -1,29 +1,26 @@
 .why {
 
-    &__inner {
-    }
-
     &__box {
         background-color: $main;
         color: #ffffff;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 9.375rem;
+        padding-bottom: 9.375rem;
     }
 
     &__title {
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 3.75rem;
     }
 
     &__body-title {
         @include font('ubuntu-bold');
-        margin-bottom: 35px;
+        margin-bottom: 2.1875rem;
     }
 
     &__box-text {
-        font-size: 30px;
-        line-height: 42px;
-        max-width: 805px;
+        font-size: 1.875rem;
+        line-height: 2.625rem;
+        max-width: 50.3125rem;
     }
 
     &__wrapper {
@@ -43,10 +40,10 @@
     }
 
     &__body {
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 1.375rem;
+        line-height: 1.875rem;
         p {
-            margin-bottom: 30px;
+            margin-bottom: 1.875rem;
         }
     }
 
@@ -59,7 +56,7 @@
     }
 
     &__btn {
-        margin-top: 45px;
+        margin-top: 2.8125rem;
         background-color: $main;
         color: #ffffff;
         &:hover {

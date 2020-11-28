@@ -12,14 +12,14 @@
 
 
     &__list {
-        margin-right: 100px;
+        margin-right: 6.25rem;
         li {
             display: flex;
             align-items: center;
-            font-size: 30px;
-            line-height: 48px;
+            font-size: 1.875rem;
+            line-height: 3rem;
             letter-spacing: 0.05em;
-            margin-bottom: 60px;
+            margin-bottom: 3.75rem;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -29,8 +29,8 @@
             }
             
             img {
-                margin-right: 50px;
-                width: 51px;
+                margin-right: 3.125rem;
+                width: 3.1875rem;
             }
         }
     }

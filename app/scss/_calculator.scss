@@ -3,7 +3,7 @@
     padding-bottom: 100px;
 
     &__title {
-        margin-bottom: 65px;
+        margin-bottom: 4.0625rem;
         text-align: center;
     }
 
@@ -16,15 +16,15 @@
         input, select {
             display: block;
             @include font('ubuntu');
-            font-size: 20px;
+            font-size: 1.25rem;
             color: $third;
             background-color: $grey;
             border-radius: 15px;
             border: none;
-            padding: 20px 20px;
-            height: 65px;
+            padding: 1.25rem 1.25rem;
+            height: 4.0625rem;
             width: 100%;
-            min-width: 160px;
+            min-width: 10rem;
             &::placeholder {
                 color: $third;
             }
@@ -38,7 +38,7 @@
             background-image: url('../images/select-arrow.png');
             background-repeat: no-repeat;
             background-position: right 20px center;
-            padding: 20px 45px 20px 22px;
+            padding: 1.25rem 2.8125rem 1.25rem 1.375rem;
             appearance: none;
         }
 
@@ -54,52 +54,46 @@
     }
 
     &__left {
-        margin-right: 130px;
+        margin-right: 8.125rem;
     }
-
-    &__row {
-    }
-
+    
     &__item-label {
         display: inline-block;
-        font-size: 20px;
-        margin-right: 15px;
-        line-height: 42px;
+        font-size: 1.25rem;
+        margin-right: 0.9375rem;
+        line-height: 2.625rem;
     }
 
     &__top {
         @include font('ubuntu-bold');
         display: flex;
         justify-content: space-between;
-        margin-bottom: 25px;
+        margin-bottom: 1.5625rem;
     }
 
     &__col {
-        margin-left: 50px;
+        margin-left: 3.125rem;
         flex-shrink: 0;
         &:first-child {
             margin-left: 0;
-            max-width: 440px;
+            max-width: 27.5rem;
             width: 100%;
 
             select {
-                max-width: 270px;
+                max-width: 16.875rem;
             }
         }
     }
 
     &__col-title {
         @include font('ubuntu-bold');
-        font-size: 24px;
-        line-height: 42px;
-        margin-bottom: 30px;
+        font-size: 1.5rem;
+        line-height: 2.625rem;
+        margin-bottom: 1.875rem;
     }
 
     &__item {
-        margin-bottom: 25px;
-    }
-
-    &__bottom {
+        margin-bottom: 1.5625rem;
     }
 
     &__checkboxes {

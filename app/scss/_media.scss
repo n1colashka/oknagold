@@ -15,21 +15,18 @@
 }
 
 @media (max-width: 1740px) {
-    body {
-        font-size: 18px;
-        line-height: 24px;
-    }
-
     .header {
+        font-size: 16px;
+        line-height: 20px;
         &__logo {
             img {
-                width: 8rem;
+                width: 128px;
             }
         }
 
         &__btn {
-            font-size: 1rem;
-            margin-left: 1.5rem;
+            font-size: 16px;
+            margin-left: 24px;
         }
     }
 }
@@ -59,6 +56,13 @@
 }
 
 @media (max-width: 1600px) {
+    .blog-page {
+        margin-top: 250px;
+        padding-bottom: 60px;
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
     .gallery-page {
         &__tabs-inner {
             margin-left: -30px;
@@ -92,9 +96,13 @@
 
 @media (max-width: 1500px) {
     .blog-page {
-        padding-top: 20px;
+        padding-top: 30px;
+    }
+    .gallery-page {
+        margin-top: 250px;
     }
     .calculator {
+        margin-top: 230px;
         &__col {
             margin-left: 20px;
             &:first-child {
@@ -165,6 +173,27 @@
     }
 }
 
+@media (max-width: 1450px) {
+    .header {
+        width: 98%;
+    }
+    .header__bottom-navigation > ul > li > a {
+        padding: 1.25rem 1rem;
+    }
+    .header__center-links li {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .header__center-links img {
+        max-width: 20px;
+    }
+    .header__socials {
+        align-items: flex-end;
+        li img {
+            max-width: 20px;
+        }
+    }
+}
 @media (max-width: 1400px) {
     .article-page {
         &__tags {
@@ -235,36 +264,18 @@
     }
     .keys {
         &__content {
-            font-size: 18px;
-            line-height: 26px;
+            font-size: 1.125rem;
+            line-height: 1.625rem;
         }
     }
     .hero {
         &__item-title {
-            font-size: 62px;
-            line-height: 62px;
-            margin-bottom: 70px;
+            font-size: 3.875rem;
+            line-height: 3.875rem;
+            margin-bottom: 3rem;
         }
     }
-    .header {
-        width: 98%;
-    }
-    .header__bottom-navigation > ul > li > a {
-        padding: 1.25rem 1rem;
-    }
-    .header__center-links li {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .header__center-links img {
-        max-width: 20px;
-    }
-    .header__socials {
-        align-items: flex-end;
-        li img {
-            max-width: 20px;
-        }
-    }
+    
 }
 
 @media (max-width: 1320px) {
@@ -1299,7 +1310,7 @@
         }
     }
     .btn {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .hero {
         min-height: auto;
@@ -1946,5 +1957,54 @@
 @media (max-width: 1700px) {
     .product-page .breadcrumbs {
         left: 15px;
+    }
+}
+
+@media (max-width: 1600px) {
+    
+    .why__img {
+        height: auto;
+        img {
+            height: 800px;
+        }
+    }
+    .contacts {
+        &__text {
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+        }
+    }
+    .contacts__plan li img {
+        width: 80%;
+    }
+    .partners {
+        padding-bottom: 70px;
+        &__text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        &__box {
+            margin-bottom: 3rem;
+        }
+    }
+    .benefits {
+        &__list li img {
+            max-width: 6rem;
+        }
+    }
+    .btn {
+        font-size: 1.25rem;
+        padding: 0.625rem 1.875rem;
+    }
+    html {
+        font-size: 14px;
+    }
+    .footer {
+        padding: 4.375rem 0 5.625rem 0;
+
+        &__list {
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+        }
     }
 }

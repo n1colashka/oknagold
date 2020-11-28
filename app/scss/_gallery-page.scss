@@ -7,10 +7,7 @@
 
     &__title {
         text-align: center;
-        margin-bottom: 35px;
-    }
-
-    &__pagination {
+        margin-bottom: 2.1875rem;
     }
 
     &__tabs-list {
@@ -24,18 +21,18 @@
 
     &__tabs-item {
         @include font('ubuntu-bold');
-        font-size: 20px;
+        font-size: 1.25rem;
         letter-spacing: 0.075em;
         background-color: transparent;
         color: $third;
-        padding: 10px 30px;
+        padding: 0.625rem 1.875rem;
         cursor: pointer;
         border: 2px solid $third;
         border-radius: 15px;
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 1.5625rem;
+        margin-right: 1.5625rem;
         text-transform: uppercase;
-        margin-bottom: 35px;
+        margin-bottom: 2.1875rem;
         transition: .3s ease;
 
         &.active {
@@ -52,10 +49,10 @@
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        margin: 0 -80px;
-        margin-bottom: -120px;
-        padding-bottom: 45px;
-        padding-top: 45px;
+        margin: 0 -5rem;
+        margin-bottom: -7.5rem;
+        padding-bottom: 2.8125rem;
+        padding-top: 2.8125rem;
     }
 
     &__item {
@@ -63,7 +60,7 @@
         margin-left: 80px;
         margin-right: 80px;
         height: 360px;
-        margin-bottom: 120px;
+        margin-bottom: 7.5rem;
         img {
             width: 100%;
             height: 100%;

@@ -16,9 +16,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 645px;
-        margin-bottom: 30px;
-        padding: 20px;
+        height: 40.3125rem;
+        margin-bottom: 1.875rem;
+        padding: 1.25rem;
 
         &::after {
             position: absolute;
@@ -35,8 +35,8 @@
         position: relative;
         z-index: 5;
         @include font('ubuntu-bold');
-        font-size: 48px;
-        line-height: 72px;
+        font-size: 3rem;
+        line-height: 4.5rem;
         color: #ffffff;
         text-align: center;
     }
@@ -49,24 +49,24 @@
         top: 0;
         background-color: $second;
         color: $black;
-        padding: 20px 45px;
+        padding: 1.25rem 2.8125rem;
     }
 
     &__text {
-        font-size: 22px;
-        line-height: 30px;
-        margin-bottom: 50px;
+        font-size: 1.375rem;
+        line-height: 1.875rem;
+        margin-bottom: 3.125rem;
     }
 
     p {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
     &__list {
         list-style-type: '✓';
-        padding-left: 20px;
+        padding-left: 1.25rem;
         color: $second;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
 
         span {
             color: $black;
@@ -78,11 +78,11 @@
     }
 
     &__box {
-        font-size: 30px;
-        line-height: 42px;
-        padding: 55px 85px;
+        font-size: 1.875rem;
+        line-height: 2.625rem;
+        padding: 3.4375rem 5.3125rem;
         background-color: $main;
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
         color: #ffffff;
 
         b {
@@ -92,17 +92,17 @@
 
     &__text-title {
         @include font('ubuntu-bold');
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 
     &__list-text {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
     &__img {
-        margin-top: 30px;
-        margin-bottom: 65px;
-        max-height: 450px;
+        margin-top: 1.875rem;
+        margin-bottom: 4.0625rem;
+        max-height: 28.125rem;
 
         img {
             object-fit: cover;
@@ -113,8 +113,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 100px;
-        padding-bottom: 50px;
+        margin-top: 6.25rem;
+        padding-bottom: 3.125rem;
         border-bottom: 1px solid $black;
     }
 
@@ -132,27 +132,27 @@
 
     &__share-title {
         @include font('ubuntu-bold');
-        font-size: 24px;
-        line-height: 30px;
-        margin-right: 45px;
-        margin-top: 10px;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        margin-right: 2.8125rem;
+        margin-top: 0.625rem;
     }
 
     .comments__list {
-        padding-right: 150px;
+        padding-right: 9.375rem;
     }
 
     &__tags {
-        margin-left: 100px;
+        margin-left: 6.25rem;
         flex-shrink: 0;
-        margin-top: 60px;
+        margin-top: 3.75rem;
     }
 
     &__tags-title {
         @include font('ubuntu-bold');
-        font-size: 48px;
-        line-height: 72px;
-        margin-bottom: 40px;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        margin-bottom: 2.5rem;
     }
 
     &__tags-list {
@@ -162,17 +162,17 @@
         li {
             display: inline-block;
             @include font('ubuntu-bold');
-            font-size: 20px;
+            font-size: 1.25rem;
             color: $third;
             border: 2px solid $third;
-            margin-bottom: 35px;
+            margin-bottom: 2.1875rem;
             text-transform: uppercase;
             border-radius: 15px;
             transition: .3s ease;
 
             a {
                 display: block;
-                padding: 12px 30px;
+                padding: 0.75rem 1.875rem;
             }
 
             &:hover {
@@ -185,44 +185,4 @@
             }
         }
     }
-}
-
-.rating {
-
-    &__title {
-    }
-}
-.comments {
-
-    &__title {
-    }
-
-    &__form {
-    }
-
-    &__btn {
-    }
-
-    &__list {
-    }
-
-    &__item {
-    }
-
-    &__img {
-    }
-
-    &__info {
-    }
-
-    &__head {
-    }
-
-    &__author {
-    }
-
-    &__text {
-    }
-}
-.btn {
 }

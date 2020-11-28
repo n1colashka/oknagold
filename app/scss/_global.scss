@@ -9,13 +9,13 @@
 html {
     box-sizing: border-box;
     overflow-x: hidden;
+    font-size: 22px;
+    line-height: 30px;
 }
 
 body {
     position: relative;
     @include font('ubuntu');
-    font-size: 22px;
-    line-height: 30px;
     color: $black;
     overflow-x: hidden;
 }
@@ -57,7 +57,9 @@ h6 {
     @include font('ubuntu-bold');
     font-size: 3rem;
     line-height: 4.5rem;
-    word-break: break-word;
+    @media (max-width: 768px) {
+        word-break: break-word;
+    }
 }
 
 .btn {
@@ -127,6 +129,8 @@ input::-webkit-inner-spin-button {
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.25rem;
+    line-height: 2.125rem;
 
     li:hover {
         text-decoration: underline;
