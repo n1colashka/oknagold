@@ -121,10 +121,6 @@
     }
 
     .keys {
-        &__box-bg,
-        &__orange-box-bg {
-            display: none;
-        }
 
         &__content {
             align-items: stretch;
@@ -378,11 +374,7 @@
             padding-right: 15px;
         }
     }
-    .us {
-        &__title {
-            margin-right: 73px;
-        }
-    }
+   
     .partners {
         &__list {
             padding: 30px 45px;
@@ -642,6 +634,12 @@
 }
 
 @media (max-width: 1024px) {
+    .keys {
+        &__box-bg,
+        &__orange-box-bg {
+            display: none;
+        }
+    }
     .article-page {
         &__box {
             padding: 30px;
@@ -1975,7 +1973,7 @@
         }
     }
     .contacts__plan li img {
-        width: 80%;
+        width: 63%;
     }
     .partners {
         padding-bottom: 70px;
@@ -1996,8 +1994,17 @@
         font-size: 1.25rem;
         padding: 0.625rem 1.875rem;
     }
+    .us__title {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    .partners {
+        &__item {
+            max-width: 8rem;
+        }
+    }
     html {
-        font-size: 14px;
+        font-size: 12px;
     }
     .footer {
         padding: 4.375rem 0 5.625rem 0;
@@ -2007,4 +2014,175 @@
             line-height: 1.25rem;
         }
     }
+    .services-page {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 1600px) and (min-width: 1500px) {
+    .product-page .breadcrumbs {
+        top: 240px;
+    }
+}
+    
+@media (max-width: 1600px) and (min-width: 1024px) {
+    .title {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    
+    .container {
+        max-width: 102.5rem;
+    }
+
+    .hero {
+        .container {
+            max-width: 102.5rem;
+        }
+    }
+    
+    .partners__item img {
+        width: 90%;
+    }
+
+    .partners__list {
+        padding: 1.8125rem 2.625rem;
+    }
+
+    .keys__box {
+        flex-basis: 28%;
+        margin-left: 54px;
+        margin-right: -15px;
+    }
+
+    .header .header__bottom-navigation-wrapper > ul {
+        height: 20rem;
+    }
+
+    .header {
+    
+        &__logo {
+            img {
+                width: 10rem;
+            }
+        }
+    
+        &__content {
+            padding: 1.875rem 0;
+        }
+    
+        &__top-row {
+            margin-bottom: 2.1875rem;
+        }
+    
+        &__top-navigation {
+            ul {
+                margin: 0 -1.125rem;
+            }
+    
+            li {
+                margin: 0 1.125rem;
+            }
+        }
+    
+        &__socials {
+            margin-left: 3.125rem;
+    
+            li {
+                img {
+                    max-width: 1.875rem;
+                }
+            }
+    
+            li + li {
+                margin-left: 1.875rem;
+            }
+        }
+    
+        &__center-links {
+            margin: 0 -1.5625rem;
+    
+            img {
+                max-width: 2.5rem;
+            }
+    
+            li {
+                margin: 0 1.5625rem;
+                
+            }
+            
+            span {
+                margin-left: 0.9375rem;
+            }
+        }
+    
+        &__schedule {
+            line-height: 1rem;
+            max-width: 13.75rem;
+            margin-left: 1.25rem;
+    
+            a {
+                margin-bottom: 0.9375rem;
+            }
+    
+            span {
+                line-height: 1.5rem;
+            }
+        }
+    
+        &__bottom-navigation {
+    
+            & > ul {
+                margin: 0 -1.25rem;
+    
+    
+                // Все ссылки навигации
+                & > li a {
+                    padding: 0.625rem;
+                    padding-left: 1.25rem;
+                }
+            }
+    
+            // Ссылки меню 0 уровня
+            & > ul > li >  a {
+                padding: 1.25rem;
+            }
+    
+            &-wrapper {
+                min-width: 25rem;
+    
+                // Список меню 1 уровня
+                & > ul {
+                    min-width: 25rem;
+                }
+                // Список меню 2 уровня
+                & > ul > li > ul {
+                    min-width: 25rem;
+                }
+            }
+        }
+    
+        &__bottom-row-right {
+            margin-left: 1.875rem;
+        }
+    
+        &__lang {
+            
+            img {
+                max-width: 1.875rem;
+            }
+    
+            span {
+                margin-left: 0.5rem;
+            }
+        }
+    
+        &__btn {
+            font-size: 1.25rem;
+            padding: 0.75rem 1.25rem;
+            margin-left: 2.5rem;
+        }
+    }
+    
+    
 }

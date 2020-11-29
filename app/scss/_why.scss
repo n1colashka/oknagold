@@ -3,24 +3,39 @@
     &__box {
         background-color: $main;
         color: #ffffff;
-        padding-top: 9.375rem;
-        padding-bottom: 9.375rem;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        @media (max-width: 1600px) {
+            padding-top: 9.375rem;
+            padding-bottom: 9.375rem;
+        }
     }
 
     &__title {
         text-align: center;
-        margin-bottom: 3.75rem;
+        margin-bottom: 60px;
+        @media (max-width: 1600px) {
+            margin-bottom: 3.75rem;
+        }
     }
 
     &__body-title {
         @include font('ubuntu-bold');
-        margin-bottom: 2.1875rem;
+        margin-bottom: 35px;
+        @media (max-width: 1600px) {
+            margin-bottom: 2.1875rem;
+        }
     }
 
     &__box-text {
-        font-size: 1.875rem;
-        line-height: 2.625rem;
-        max-width: 50.3125rem;
+        font-size: 30px;
+        line-height: 42px;
+        max-width: 805px;
+        @media (max-width: 1600px) {
+            font-size: 1.875rem;
+            line-height: 2.625rem;
+            max-width: 50.3125rem;
+        }
     }
 
     &__wrapper {
@@ -40,10 +55,18 @@
     }
 
     &__body {
-        font-size: 1.375rem;
-        line-height: 1.875rem;
+        font-size: 22px;
+        line-height: 30px;
         p {
-            margin-bottom: 1.875rem;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 1600px) {
+            font-size: 1.375rem;
+            line-height: 1.875rem;
+            p {
+                margin-bottom: 1.875rem;
+            }
         }
     }
 
@@ -56,9 +79,12 @@
     }
 
     &__btn {
-        margin-top: 2.8125rem;
+        margin-top: 45px;
         background-color: $main;
         color: #ffffff;
+        @media (max-width: 1600px) {
+            margin-top: 2.8125rem;
+        }
         &:hover {
             background-color: #ffffff;
             color: $main;

@@ -3,9 +3,13 @@
 
     &__info {
         width: 50%;
-        padding-top: 9.375rem;
+        padding-top: 150px;
         padding-bottom: 400px;
-        padding-right: 7.1875rem;
+        padding-right: 115px;
+        @media (max-width: 1600px) {
+            padding-top: 9.375rem;
+            padding-right: 7.1875rem;
+        }
     }
 
     &__inner {
@@ -15,8 +19,12 @@
 
     &__text {
         @include font('ubuntu-bold');
-        font-size: 1.875rem;
-        line-height: 2.625rem;
+        font-size: 30px;
+        line-height: 42px;
+        @media (max-width: 1600px) {
+            font-size: 1.875rem;
+            line-height: 2.625rem;
+        }
     }
 
     &__plan {
@@ -59,8 +67,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 6.5625rem;
-        height: 6.5625rem;
+        width: 105px;
+        height: 105px;
+        @media (max-width: 1600px) {
+            width: 6.5625rem;
+            height: 6.5625rem;
+        }
 
         img {
             width: 100%;
@@ -94,23 +106,34 @@
     }
 
     &__form {
-        padding-bottom: 6.25rem;
-        padding-left: 7.1875rem;
-        padding-top: 6.25rem;
+        padding-bottom: 100px;
+        padding-left: 115px;
+        padding-top: 100px;
         width: 50%;
+
+        @media (max-width: 1600px) {
+            padding-bottom: 6.25rem;
+            padding-left: 7.1875rem;
+            padding-top: 6.25rem;
+        }
 
         input, 
         textarea {
             width: 100%;
             display: block;
             @include font('ubuntu-light');
-            font-size: 1.875rem;
-            padding: 1.375rem 3.75rem;
+            font-size: 30px;
+            padding: 22px 60px;
             border: none;
             border-radius: 15px;
             box-shadow: 0px 0px 48.96px 2.04px rgba(0, 0, 0, 0.1);
             background-color: $second;
             color: $black;
+
+            @media (max-width: 1600px) {
+                font-size: 1.875rem;
+                padding: 1.375rem 3.75rem;
+            }
 
             &::placeholder {
                 color: $black;
@@ -132,9 +155,15 @@
     }
 
     &__btn {
-        font-size: 2.25rem;
-        margin-top: 2.8125rem;
-        padding: 1.25rem 3.125rem;
+        font-size: 36px;
+        margin-top: 45px;
+        padding: 20px 50px;
+
+        @media (max-width: 1600px) {
+            font-size: 2.25rem;
+            margin-top: 2.8125rem;
+            padding: 1.25rem 3.125rem;
+        }
 
         &:hover {
             background-color: $black;

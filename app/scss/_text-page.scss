@@ -42,20 +42,30 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 -15px;
-        margin-bottom: -6.25rem;
-        li {
-            padding: 0.9375rem;
+        margin-bottom: -100px;
+        @media (max-width: 1600px) {
             margin-bottom: -6.25rem;
+        }
+        li {
+            padding: 15px;
+            margin-bottom: -100px;
             display: flex;
             align-items: center;
             justify-content: center;
-            max-width: 15rem;
+            max-width: 240px;
             width: 100%;
-            min-height: 13.4375rem;
+            min-height: 215px;
             margin-left: 15px;
             margin-right: 15px;
             background-color: $grey;
             box-shadow: 0px 0px 48.96px 2.04px rgba(0, 0, 0, 0.1);
+
+            @media (max-width: 1600px) {
+                padding: 0.9375rem;
+                margin-bottom: -6.25rem;
+                max-width: 15rem;
+                min-height: 13.4375rem;
+            }
 
             img {
                 object-fit: cover;

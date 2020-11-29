@@ -2,12 +2,12 @@
     padding-top: 40px;
     padding-bottom: 115px;
 
-    &__inner {
-    }
-
     &__title {
         text-align: center;
         margin-bottom: 2.1875rem;
+        @media (max-width: 1600px) {
+            margin-bottom: 35px;
+        }
     }
 
     &__tabs-list {
@@ -21,19 +21,27 @@
 
     &__tabs-item {
         @include font('ubuntu-bold');
-        font-size: 1.25rem;
+        font-size: 20px;
         letter-spacing: 0.075em;
         background-color: transparent;
         color: $third;
-        padding: 0.625rem 1.875rem;
+        padding: 10px 30px;
         cursor: pointer;
         border: 2px solid $third;
         border-radius: 15px;
-        margin-left: 1.5625rem;
-        margin-right: 1.5625rem;
+        margin-left: 25px;
+        margin-right: 25px;
         text-transform: uppercase;
-        margin-bottom: 2.1875rem;
+        margin-bottom: 35px;
         transition: .3s ease;
+
+        @media (max-width: 1600px) {
+            font-size: 1.25rem;
+            padding: 0.625rem 1.875rem;
+            margin-left: 1.5625rem;
+            margin-right: 1.5625rem;
+            margin-bottom: 2.1875rem;
+        }
 
         &.active {
             background-color: $second;
@@ -49,10 +57,16 @@
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        margin: 0 -5rem;
-        margin-bottom: -7.5rem;
-        padding-bottom: 2.8125rem;
-        padding-top: 2.8125rem;
+        margin: 0 -80px;
+        margin-bottom: -120px;
+        padding-bottom: 45px;
+        padding-top: 45px;
+        @media (max-width: 1600px) {
+            margin: 0 -5rem;
+            margin-bottom: -7.5rem;
+            padding-bottom: 2.8125rem;
+            padding-top: 2.8125rem;
+        }
     }
 
     &__item {
@@ -60,7 +74,10 @@
         margin-left: 80px;
         margin-right: 80px;
         height: 360px;
-        margin-bottom: 7.5rem;
+        margin-bottom: 120px;
+        @media (max-width: 1600px) {
+            margin-bottom: 7.5rem;
+        }
         img {
             width: 100%;
             height: 100%;

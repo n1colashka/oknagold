@@ -16,10 +16,16 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 40.3125rem;
-        margin-bottom: 1.875rem;
-        padding: 1.25rem;
+        height: 645px;
+        margin-bottom: 30px;
+        padding: 20px;
 
+        @media (max-width: 1600px) {
+            height: 40.3125rem;
+            margin-bottom: 1.875rem;
+            padding: 1.25rem;
+        }
+        
         &::after {
             position: absolute;
             content: "";
@@ -35,10 +41,14 @@
         position: relative;
         z-index: 5;
         @include font('ubuntu-bold');
-        font-size: 3rem;
-        line-height: 4.5rem;
+        font-size: 48px;
+        line-height: 72px;
         color: #ffffff;
         text-align: center;
+        @media (max-width: 1600px) {
+            font-size: 3rem;
+            line-height: 4.5rem;
+        }
     }
 
     &__date {
@@ -49,24 +59,39 @@
         top: 0;
         background-color: $second;
         color: $black;
-        padding: 1.25rem 2.8125rem;
+        padding: 20px 45px;
+        @media (max-width: 1600px) {
+            padding: 1.25rem 2.8125rem;
+        }
     }
 
     &__text {
-        font-size: 1.375rem;
-        line-height: 1.875rem;
-        margin-bottom: 3.125rem;
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 50px;
+        @media (max-width: 1600px) {
+            font-size: 1.375rem;
+            line-height: 1.875rem;
+            margin-bottom: 3.125rem;
+        }
     }
 
     p {
-        margin-bottom: 1.875rem;
+        margin-bottom: 30px;
+        @media (max-width: 1600px) {
+            margin-bottom: 1.875rem;
+        }
     }
 
     &__list {
         list-style-type: '✓';
-        padding-left: 1.25rem;
+        padding-left: 20px;
         color: $second;
-        margin-bottom: 1.875rem;
+        margin-bottom: 30px;
+        @media (max-width: 1600px) {
+            padding-left: 1.25rem;
+            margin-bottom: 1.875rem;
+        }
 
         span {
             color: $black;
@@ -78,13 +103,20 @@
     }
 
     &__box {
-        font-size: 1.875rem;
-        line-height: 2.625rem;
-        padding: 3.4375rem 5.3125rem;
+        font-size: 30px;
+        line-height: 42px;
+        padding: 55px 85px;
         background-color: $main;
-        margin-bottom: 3.125rem;
+        margin-bottom: 50px;
         color: #ffffff;
 
+        @media (max-width: 1600px) {
+            font-size: 1.875rem;
+            line-height: 2.625rem;
+            padding: 3.4375rem 5.3125rem;
+            margin-bottom: 3.125rem;
+        }
+        
         b {
             @include font('ubuntu-bold');
         }
@@ -92,17 +124,28 @@
 
     &__text-title {
         @include font('ubuntu-bold');
-        margin-bottom: 2.5rem;
+        margin-bottom: 40px;
+        @media (max-width: 1600px) {
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__list-text {
-        margin-bottom: 1.875rem;
+        margin-bottom: 30px;
+        @media (max-width: 1600px) {
+            margin-bottom: 1.875rem;
+        }
     }
 
     &__img {
-        margin-top: 1.875rem;
-        margin-bottom: 4.0625rem;
-        max-height: 28.125rem;
+        margin-top: 30px;
+        margin-bottom: 65px;
+        max-height: 450px;
+        @media (max-width: 1600px) {
+            margin-top: 1.875rem;
+            margin-bottom: 4.0625rem;
+            max-height: 28.125rem;
+        }
 
         img {
             object-fit: cover;
@@ -113,9 +156,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 6.25rem;
-        padding-bottom: 3.125rem;
+        margin-top: 100px;
+        padding-bottom: 50px;
         border-bottom: 1px solid $black;
+
+        @media (max-width: 1600px) {
+            margin-top: 6.25rem;
+            padding-bottom: 3.125rem;
+        }
     }
 
     &__share-box {
@@ -132,27 +180,46 @@
 
     &__share-title {
         @include font('ubuntu-bold');
-        font-size: 1.5rem;
-        line-height: 1.875rem;
-        margin-right: 2.8125rem;
-        margin-top: 0.625rem;
+        font-size: 24px;
+        line-height: 30px;
+        margin-right: 45px;
+        margin-top: 10px;
+        @media (max-width: 1600px) {
+            font-size: 1.5rem;
+            line-height: 1.875rem;
+            margin-right: 2.8125rem;
+            margin-top: 0.625rem;
+        }
     }
 
     .comments__list {
-        padding-right: 9.375rem;
+        padding-right: 150px;
+        @media (max-width: 1600px) {
+            padding-right: 9.375rem;
+        }
     }
 
     &__tags {
-        margin-left: 6.25rem;
+        margin-left: 100px;
         flex-shrink: 0;
-        margin-top: 3.75rem;
+        margin-top: 60px;
+        @media (max-width: 1600px) {
+            margin-left: 6.25rem;
+            flex-shrink: 0;
+            margin-top: 3.75rem;
+        }
     }
 
     &__tags-title {
         @include font('ubuntu-bold');
-        font-size: 3rem;
-        line-height: 4.5rem;
-        margin-bottom: 2.5rem;
+        font-size: 48px;
+        line-height: 72px;
+        margin-bottom: 40px;
+        @media (max-width: 1600px) {
+            font-size: 3rem;
+            line-height: 4.5rem;
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__tags-list {
@@ -165,14 +232,20 @@
             font-size: 1.25rem;
             color: $third;
             border: 2px solid $third;
-            margin-bottom: 2.1875rem;
+            margin-bottom: 35px;
             text-transform: uppercase;
             border-radius: 15px;
             transition: .3s ease;
+            @media (max-width: 1600px) {
+                margin-bottom: 2.1875rem;
+            }
 
             a {
                 display: block;
-                padding: 0.75rem 1.875rem;
+                padding: 12px 30px;
+                @media (max-width: 1600px) {
+                    padding: 0.75rem 1.875rem;
+                }
             }
 
             &:hover {

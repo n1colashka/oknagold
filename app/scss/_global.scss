@@ -55,8 +55,8 @@ h6 {
 
 .title {
     @include font('ubuntu-bold');
-    font-size: 3rem;
-    line-height: 4.5rem;
+    font-size: 48px;
+    line-height: 72px;
     @media (max-width: 768px) {
         word-break: break-word;
     }
@@ -65,7 +65,7 @@ h6 {
 .btn {
     display: inline-block;
     @include font('ubuntu-bold');
-    font-size: 2.25rem;
+    font-size: 36px;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 15px;
@@ -73,6 +73,9 @@ h6 {
     box-shadow: 0px 0px 48.96px 2.04px rgba(0, 0, 0, 0.1);
     padding: 1.25rem 3.125rem;
     transition: .3s ease;
+    @media (max-width: 1600px) {
+        font-size: 2.25rem;
+    }
 }
 
 .hide-overflow {

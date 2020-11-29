@@ -21,7 +21,7 @@
 
     &__item-img {
         position: relative;
-        max-width: 54.0625rem;
+        max-width: 45%;
         margin-left: auto;
         width: 100%;
         background-repeat: no-repeat;
@@ -39,10 +39,14 @@
 
     &__item-title {
         @include font('ubuntu-bold');
-        font-size: 4.5rem;
-        line-height: 4.5rem;
-        margin-bottom: 7.1875rem;
-        max-width: 50rem;
+        font-size: 72px;
+        line-height: 72px;
+        margin-bottom: 115px;
+        max-width: 800px;
+
+        @media (max-width: 1600px) {
+            margin-bottom: 7.1875rem;
+        }
 
         span {
             color: $main;

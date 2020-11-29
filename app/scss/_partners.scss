@@ -3,11 +3,17 @@
     padding-bottom: 140px;
     &__box {
         position: relative;
-        margin-bottom: 9.375rem;
+        margin-bottom: 150px;
+        @media (max-width: 1600px) {
+            margin-bottom: 9.375rem;
+        }
     }
 
     &__title {
-        margin-bottom: 3.125rem;
+        margin-bottom: 50px;
+        @media (max-width: 1600px) {
+            margin-bottom: 3.125rem;
+        }
     }
 
     &__list {
@@ -18,14 +24,23 @@
         justify-content: space-around;
         align-items: center;
         background-color: $grey;
-        padding: 2.8125rem 5.625rem;
+        padding: 45px 90px;
         width: 93%;
+        @media (max-width: 1600px) {
+            padding: 2.8125rem 5.625rem;
+        }
     }
 
     &__item {
-        max-width: 17.8125rem;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
+        max-width: 285px;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        @media (max-width: 1600px) {
+            max-width: 17.8125rem;
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
     }
 
     &__container {
@@ -37,12 +52,19 @@
     &__content {
         display: flex;
         min-width: 50%;
-        margin-bottom: 3.125rem;
+        margin-bottom: 50px;
+        @media (max-width: 1600px) {
+            margin-bottom: 3.125rem;
+        }
     }
 
     &__text {
-        font-size: 1.875rem;
-        line-height: 2.625rem;
+        font-size: 30px;
+        line-height: 42px;
+        @media (max-width: 1600px) {
+            font-size: 1.875rem;
+            line-height: 2.625rem;
+        }
         b {
             @include font('ubuntu-bold');
         }
@@ -58,7 +80,11 @@
         border-color: $main;
         color: $main;
         line-height: 1.5;
-        padding: 1.0625rem 3.125rem;
+        padding: 17px 50px;
+        @media (max-width: 1600px) {
+            padding: 1.0625rem 3.125rem;
+        }
+        
 
         &:hover {
             background-color: $main;

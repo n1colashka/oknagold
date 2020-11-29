@@ -3,8 +3,11 @@
     padding-bottom: 100px;
 
     &__title {
-        margin-bottom: 4.0625rem;
+        margin-bottom: 65px;
         text-align: center;
+        @media (max-width: 1600px) {
+            margin-bottom: 4.0625rem;
+        }
     }
 
     &__inner {
@@ -16,17 +19,24 @@
         input, select {
             display: block;
             @include font('ubuntu');
-            font-size: 1.25rem;
+            font-size: 20px;
             color: $third;
             background-color: $grey;
             border-radius: 15px;
             border: none;
-            padding: 1.25rem 1.25rem;
-            height: 4.0625rem;
+            padding: 20px 20px;
+            height: 65px;
             width: 100%;
-            min-width: 10rem;
+            min-width: 160px;
             &::placeholder {
                 color: $third;
+            }
+
+            @media (max-width: 1600px) {
+                font-size: 1.25rem;
+                padding: 1.25rem 1.25rem;
+                height: 4.0625rem;
+                min-width: 10rem;
             }
         }
 
@@ -38,8 +48,11 @@
             background-image: url('../images/select-arrow.png');
             background-repeat: no-repeat;
             background-position: right 20px center;
-            padding: 1.25rem 2.8125rem 1.25rem 1.375rem;
+            padding: 20px 45px 20px 22px;
             appearance: none;
+            @media (max-width: 1600px) {
+                padding: 1.25rem 2.8125rem 1.25rem 1.375rem;
+            }
         }
 
         label {
@@ -59,41 +72,67 @@
     
     &__item-label {
         display: inline-block;
-        font-size: 1.25rem;
-        margin-right: 0.9375rem;
-        line-height: 2.625rem;
+        font-size: 20px;
+        margin-right: 15px;
+        line-height: 42px;
+        @media (max-width: 1600px) {
+            font-size: 1.25rem;
+            margin-right: 0.9375rem;
+            line-height: 2.625rem;
+        }
     }
 
     &__top {
         @include font('ubuntu-bold');
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1.5625rem;
+        margin-bottom: 25px;
+        @media (max-width: 1600px) {
+            margin-bottom: 1.5625rem;
+        }
     }
 
     &__col {
-        margin-left: 3.125rem;
+        margin-left: 50px;
         flex-shrink: 0;
         &:first-child {
             margin-left: 0;
-            max-width: 27.5rem;
+            max-width: 440px;
             width: 100%;
 
             select {
-                max-width: 16.875rem;
+                max-width: 270px;
+            }
+        }
+
+        @media (max-width: 1600px) {
+            margin-left: 3.125rem;
+            &:first-child {
+                max-width: 27.5rem;
+                select {
+                    max-width: 16.875rem;
+                }
             }
         }
     }
 
     &__col-title {
         @include font('ubuntu-bold');
-        font-size: 1.5rem;
-        line-height: 2.625rem;
-        margin-bottom: 1.875rem;
+        font-size: 24px;
+        line-height: 42px;
+        margin-bottom: 30px;
+        @media (max-width: 1600px) {
+            font-size: 1.5rem;
+            line-height: 2.625rem;
+            margin-bottom: 1.875rem;
+        }
     }
 
     &__item {
-        margin-bottom: 1.5625rem;
+        margin-bottom: 25px;
+        @media (max-width: 1600px) {
+            margin-bottom: 1.5625rem;
+        }
     }
 
     &__checkboxes {
@@ -224,9 +263,14 @@
 
     &__btn {
         font-size: 20px;
+        padding: 14px 30px;
+
+        @media (max-width: 1600px) {
+            font-size: 1.25rem;
+            padding: 0.875rem 1.875rem;
+        }
         background-color: $main;
         color: #ffffff;
-        padding: 14px 30px;
 
         &:hover {
             background-color: #ffffff;

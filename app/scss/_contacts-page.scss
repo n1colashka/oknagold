@@ -12,14 +12,23 @@
 
 
     &__list {
-        margin-right: 6.25rem;
+        margin-right: 100px;
+        @media (max-width: 1600px) {
+            margin-right: 6.25rem;
+        }
         li {
             display: flex;
             align-items: center;
-            font-size: 1.875rem;
-            line-height: 3rem;
+            font-size: 30px;
+            line-height: 48px;
             letter-spacing: 0.05em;
-            margin-bottom: 3.75rem;
+            margin-bottom: 60px;
+            @media (max-width: 1600px) {
+                font-size: 1.875rem;
+                line-height: 3rem;
+                letter-spacing: 0.05em;
+                margin-bottom: 3.75rem;
+            }
             &:last-child {
                 margin-bottom: 0;
             }
@@ -29,8 +38,13 @@
             }
             
             img {
-                margin-right: 3.125rem;
-                width: 3.1875rem;
+                margin-right: 50px;
+                width: 51px;
+
+                @media (max-width: 1600px) {
+                    margin-right: 3.125rem;
+                    width: 3.1875rem;
+                }
             }
         }
     }
