@@ -28,8 +28,11 @@
         margin-right: 60px;
         @media (max-width: 1600px) {
             margin-bottom: 5rem;
-            margin-left: 3.75rem;
-            margin-right: 3.75rem;
+            // margin-left: 3.75rem;
+            // margin-right: 3.75rem;
+            flex-basis: calc(33.333% - 120px);
+            max-width: 27.8125rem;
+            min-height: 27.8125rem;
         }
     }
 

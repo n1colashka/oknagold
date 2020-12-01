@@ -19,10 +19,12 @@
 
     &__item {
         margin-bottom: 60px;
+        flex-basis: calc(50% - 300px);
         @media (max-width: 1600px) {
             margin-bottom: 3.75rem;
+            flex-basis: calc(50% - 18.75rem);
         }
-        flex-basis: calc(50% - 300px);
+        
         ul {
             list-style-type: '✓';
             padding-left: 20px;
@@ -45,6 +47,10 @@
         width: 665px;
         height: 440px;
         margin-bottom: 30px;
+        @media (max-width: 1600px) {
+            width: 41.5625rem;
+            height: 27.5rem;
+        }
         
         img {
             width: 100%;

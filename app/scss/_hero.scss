@@ -54,7 +54,11 @@
     }
 
     &__item-btn {
+        font-size: 30px;
+        line-height: 30px;
+        padding: 20px 60px;
         background-color: $second;
+
         &:hover {
             background-color: #ffffff;
             color: $second;
